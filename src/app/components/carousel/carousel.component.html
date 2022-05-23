@@ -1,0 +1,34 @@
+<section class="carousel">
+  <div class="container">
+    <div class="row">
+      <div
+        [ngClass]="[item.current ? 'col-4' : 'col-2', i > 4 ? 'box--hide' : '']"
+        *ngFor="let item of carousel; let i = index"
+      >
+        <div class="card align-items-center">
+          <img src="../assets/{{ item.img }}" />
+          <div class="card-body">
+            <h5 class="card-title">{{ item.title }}</h5>
+            <p class="card-title-start">
+              Start here <i class="bi bi-chevron-right"></i>
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="controls">
+      <a class="left-arrow" (click)="previousCard()"
+        ><i class="bi bi-chevron-left"></i
+      ></a>
+      <a class="right-arrow" (click)="nextCard()"
+        ><i class="bi bi-chevron-right"></i
+      ></a>
+    </div>
+    
+    <div class="carousel-text">
+      <p>What are you <b>here to do?</b></p>
+    </div>
+  </div>
+</section>

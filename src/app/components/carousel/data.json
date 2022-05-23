@@ -1,0 +1,38 @@
+[
+    {
+    "img": "small-card.png",
+    "title": "Mobile internet",
+    "subtitle": false,
+    "subtitleText": "start here",
+    "current": false
+  },
+  {
+    "img": "small-card.png",
+    "title": "Home internet",
+    "subtitle": false,
+    "subtitleText": "start here",
+    "current": false
+
+  },
+  {
+    "img": "big-card.png",
+    "title": "Get a device",
+    "subtitle": false,
+    "subtitleText": "start here",
+    "current": true
+  },
+  {
+    "img": "small-card.png",
+    "title": "Add a phone-line",
+    "subtitle": false,
+    "subtitleText": "start here",
+    "current": false
+  },
+  {
+    "img": "small-card.png",
+    "title": "Upgrade",
+    "subtitle": false,
+    "subtitleText": "start here",
+    "current": false
+  }
+]

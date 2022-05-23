@@ -1,10 +1,14 @@
 <section class="carousel">
   <div class="container">
     <div class="row">
+
+      <!-- Start card loop -->
       <div
         [ngClass]="[item.current ? 'col-4' : 'col-2', i > 4 ? 'box--hide' : '']"
         *ngFor="let item of carousel; let i = index"
       >
+
+        <!-- start  card -->
         <div class="card align-items-center">
           <img src="../assets/{{ item.img }}" />
           <div class="card-body">
@@ -14,10 +18,14 @@
             </p>
           </div>
         </div>
-        
+        <!-- // End card  -->
+
       </div>
+      <!-- // End card loop -->
+      
     </div>
 
+    <!-- Start controls -->
     <div class="controls">
       <a class="left-arrow" (click)="previousCard()"
         ><i class="bi bi-chevron-left"></i
@@ -26,9 +34,14 @@
         ><i class="bi bi-chevron-right"></i
       ></a>
     </div>
-    
+    <!-- // End controls -->
+
+    <!-- Start Carousel text -->
     <div class="carousel-text">
       <p>What are you <b>here to do?</b></p>
     </div>
+    <!-- // End carousel text  -->
+
   </div>
+
 </section>
